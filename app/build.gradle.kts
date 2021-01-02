@@ -60,4 +60,7 @@ dependencies {
     implementation("androidx.camera:camera-view:1.0.0-alpha20")
     // If you want to additionally use the CameraX Extensions library
     implementation("androidx.camera:camera-extensions:1.0.0-alpha20")
+
+    // Permission Library
+    implementation("com.github.florent37:runtime-permission-kotlin:1.1.2")
 }
