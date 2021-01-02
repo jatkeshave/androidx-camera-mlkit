@@ -63,4 +63,8 @@ dependencies {
 
     // Permission Library
     implementation("com.github.florent37:runtime-permission-kotlin:1.1.2")
+
+    // Google ML Kit
+    // Barcode
+    implementation("com.google.mlkit:barcode-scanning:16.1.0")
 }
