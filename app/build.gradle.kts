@@ -43,5 +43,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 
-    implementation("implementation 'com.google.android.material:material:1.2.1")
+    implementation("com.google.android.material:material:1.2.1")
 }
