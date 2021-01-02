@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application") apply true
-    kotlin("android") apply true
+    id("com.android.application")
+    kotlin("android")
 }
 
 android {
@@ -30,6 +30,11 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+    buildFeatures {
+        viewBinding = true
+        aidl = false
+        renderScript = false
+    }
 }
 
 dependencies {
@@ -44,4 +49,15 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 
     implementation("com.google.android.material:material:1.2.1")
+
+    // Androidx Camera dependencies
+    // CameraX core library using the camera2 implementation
+    val cameraxVersion = "1.0.0-rc01"
+    implementation("androidx.camera:camera-camera2:${cameraxVersion}")
+    // If you want to additionally use the CameraX Lifecycle library
+    implementation("androidx.camera:camera-lifecycle:${cameraxVersion}")
+    // If you want to additionally use the CameraX View class
+    implementation("androidx.camera:camera-view:1.0.0-alpha20")
+    // If you want to additionally use the CameraX Extensions library
+    implementation("androidx.camera:camera-extensions:1.0.0-alpha20")
 }
